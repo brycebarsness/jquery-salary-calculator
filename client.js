@@ -41,6 +41,9 @@ function setPayroll(){
         console.log(expense);
         $('#payroll').addClass( 'overBudget' )
     }
+    else{
+        $('#payroll').removeClass( 'overBudget')
+    }
 }
 
 function removeEmployee(){
