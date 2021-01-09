@@ -9,7 +9,7 @@ $('body').on('click', '#delete', removeEmployee)
 let expense = 0;
 
 function addemployee(){
-    const firstName = $("#employeeFirstName").val();
+    const firstName = $("#firstName").val();
     const lastName = $("#lastName").val();
     const id = $("#id").val();
     const title = $("#title").val();
@@ -26,16 +26,31 @@ function addemployee(){
         <td><button id='delete' type=button> Delete </button></td>
         </tr>`);
 
-    $('#employee-first-name').val('');
-    $('#last-name').val('');
+    $('#firstName').val('');
+    $('#lastName').val('');
     $('#id').val('');
     $('#title').val('');
-    $('#annualsalary').val('');
-    $('#payroll').empty() 
-    $('#payroll').append(expense);
+    $('#annualSalary').val('');
+    setPayroll();
 };
 
+function setPayroll(){
+    $('#payroll').empty();
+    $('#payroll').append(expense.toFixed(2));
+    if(expense > 20000){
+        console.log(expense);
+        $('#payroll').addClass( 'overBudget' )
+    }
+}
+
 function removeEmployee(){
-$(this).closest('tr').remove();
+    let subSalary = ($(this).closest('tr').find('.salary').text()/ 12);
+    console.log(subSalary);
+    expense -= subSalary; 
+    console.log(expense);
+    $(this).closest('tr').remove();
+    setPayroll();
 };
+
+
 

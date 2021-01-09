@@ -1,16 +1,5 @@
-#employeeTable {
-   display: inline-block;
-   margin: 5px;
-   border: 1px solid gray;
-   padding: 10px;
-   list-style-type: none;
-   font-weight: bold;
-   border-radius: 3px;
-   
+.overBudget {
+    background-color: indianred;
+
 }
-.head {
-    border: 1px solid black;
-    padding: 5px;
-    margin: 5px;
-    
-}
+
