@@ -14,7 +14,7 @@ function addemployee(){
     const id = $("#id").val();
     const title = $("#title").val();
     const annualSalary = $("#annualSalary").val();
-    expense += Number(annualSalary / 12)
+    expense += Number(annualSalary / 12);
    
     $("#tableBody").append(
         `<tr id = 'test'>
@@ -42,7 +42,7 @@ function setPayroll(){
         $('#payroll').addClass( 'overBudget' )
     }
     else{
-        $('#payroll').removeClass( 'overBudget')
+        $('#payroll').removeClass( 'overBudget');
     }
 }
 
