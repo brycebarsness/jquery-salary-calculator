@@ -8,7 +8,7 @@ tr:hover {
     background-color: #f5f5f5;
 }
 
-td, th {
+td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -16,9 +16,9 @@ td, th {
 
 table {
   min-width: 85%;
-
-th {
-  height: 70px;
+}
+thead {
+  background-color: lightgrey ;
 }
 
 

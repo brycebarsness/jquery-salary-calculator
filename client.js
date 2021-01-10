@@ -46,23 +46,23 @@ function setPayroll(){
     }
 };//end of setPayroll function
 
-function removeEmployee(){
+function removeEmployee(){//selecting delete button with a scope of body.
     let subSalary = ($(this).closest('tr').find('.salary').text()/ 12);
-    console.log(subSalary);
-    expense -= subSalary; 
+    console.log(subSalary);//'this' is the button, selecting its row, finding adjacent salary
+    expense -= subSalary; //removing subSalary (annual salary/12)
     console.log(expense);
-    $(this).closest('tr').remove();
-    setPayroll();
+    $(this).closest('tr').remove();//from the button, removing its row.
+    setPayroll();//updating expense with subsalary subtracted.
 };
 
-function alertFunction(){
+function alertFunction(){//a quick pop up with the amount over budget
  let amountOverB = (expense - 20000).toFixed(2); 
  alert(`Warning: $${amountOverB} Over Budget`);
 }
-
-function displayBudget(){
-   let displayBudget = 0;
-    if( expense > 20000){
+//below is a work in progress.... it is 
+function displayBudget(){// not called, I need to get it to display once,
+   let displayBudget = 0;// update the number when removed.
+    if( expense > 20000){// I could add it as a new td possably.
         displayBudget = expense - 20000;
     $('#tableBody').append(
         `<tr>
