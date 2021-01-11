@@ -1,3 +1,9 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: darkcyan;
+    
+}
 .overBudget {
     background-color: indianred;
 
@@ -20,5 +26,7 @@ table {
 thead {
   background-color: lightgrey ;
 }
+
+
 
 
