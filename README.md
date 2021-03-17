@@ -2,11 +2,6 @@
 
 
 
-![MIT LICENSE](https://img.shields.io/github/license/scottbromander/the_marketplace.svg?style=flat-square)
-![REPO SIZE](https://img.shields.io/github/repo-size/scottbromander/the_marketplace.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/scottbromander/the_marketplace.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/scottbromander/the_marketplace.svg?style=social)
-
 # Dunder Mifflin Monthly Expense Audit
 
 ## Processing Annual Salary Total by Employee For Budget Total per Month
@@ -26,9 +21,7 @@ To see the fully functional site, please visit: ([myfuture.self.nota/real/#websi
 HTML5, CSS3, Javascript ECMA6, JQuery
 
 
-## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank you Blaine and Mary)
 
-## Support
-If you have suggestions or issues, please email me at [brycebarsness5@gmail.com]
+
+
 
